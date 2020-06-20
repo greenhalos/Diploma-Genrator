@@ -1,0 +1,50 @@
+main {
+    display: flex;
+
+}
+
+.preview-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    /* border: 1px #D3D3D3 solid; */
+    border-radius: 5px;
+    background: white;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    background-image: url("diploma.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.portrait {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+.landscape {
+    width: 29.7cm;
+    height: 21cm;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 25px;
+}
+
+/* #print {
+    margin-top: 10px;
+} */
