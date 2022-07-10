@@ -37,8 +37,9 @@ main {
 }
 
 .name {
-    font-size: 30px;
+    font-size: 44px;
     font-weight: bold;
+    padding-top: 96px;
 }
 
 .title {

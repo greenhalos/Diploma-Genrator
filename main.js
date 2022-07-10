@@ -1,3 +1,4 @@
+const { jsPDF } = window.jspdf;
 
 const changeSize = (elementId) => {
     const elementValueDisplayId = elementId + "SizeValue";
