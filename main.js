@@ -1,4 +1,4 @@
-const { jsPDF } = window.jspdf;
+const {jsPDF} = window.jspdf;
 
 const changeSize = (elementId) => {
     const elementValueDisplayId = elementId + "SizeValue";
@@ -87,3 +87,18 @@ window.printPdf = () => {
         printBtn.innerText = "Print PDF"
     })
 }
+
+const elmFileUpload = document.getElementById('file-upload');
+
+function onFileUploadChange(e) {
+    const file = e.target.files[0];
+    const fr = new FileReader();
+    fr.onload = onFileReaderLoad;
+    fr.readAsDataURL(file);
+}
+
+function onFileReaderLoad(e) {
+    document.getElementById("preview").style.backgroundImage = "url('" + e.target.result + "')";
+}
+
+elmFileUpload.addEventListener('change', onFileUploadChange, false);
